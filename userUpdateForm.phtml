@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<title>Update form</title>
+<?php		
+		
+?>
+
+		<form action="index.php?route=register" method="post">
+			<h5>User Update Form</h5>
+				<input type="email" value="<?=$user->email?>" name="email" placeholder="Enter email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="password-2" placeholder="Retype password">
+				<button type="submit">Register</button>
+        </form>
+
+		</body>
+</html>

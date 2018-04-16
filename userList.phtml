@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+    <head>
+    </head>
+    <body>
+        <div class="container">
+            <table>
+				<tr>
+					<th>Email</th>
+                </tr>
+                <?php foreach($users as $user): ?>
+                <tr>
+					<td><a href="index.php?route=userUpdateForm&email=<?=$user -> email?>"><?=$user -> email ?></a></td>
+ // ovde domaci                   
+                </tr>
+                <?php endforeach; ?>
+               </table>
+               <form class="" action="index.php?route=userList" method="">
+                    <input type="hidden" name="route" value="userList">
+                    <input type="text" name="emailFilter" value="">
+                    <input type="submit" name="" value="search">
+               </form>
+          </div>
+     </body>
+</html>
