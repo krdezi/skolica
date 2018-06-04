@@ -1,7 +1,0 @@
-domaci paginacija
-1) 1b 2 3 ... 46
-2) 1... 5 6b 7 ...46
-3) 1... 44 45 46b
-
-U case spremamo parametre (last page, offset perPage)
-Pravimo funkciju a u html echoujemo linkove
