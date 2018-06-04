@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+    <head>
+    </head>
+    <body>
+        <div class="container">
+        <h2>Article list</h2>
+            <table>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Username</th>
+                    <th>Status</th>
+                    <th>Age</th>
+                </tr>
+                <?php foreach($users as $user): ?>
+                <tr>
+                        <td><?=$user['firstName']?></td>
+                        <td><?=$user['lastName']?></td>
+                        <td><?=$user['email']?></td>
+                        <td><?=$user['password']?></td>
+                        <td><?=$user['username']?></td>
+                        <td><?=$user['status']; ?></td>
+                        <td><?=$user['age']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+            <?php if(count($users) > 0) : ?>
+               <form class="" action="index.php?route=userList" method="">
+                    <input type="hidden" name="route" value="userList">
+                    <input type="text" name="emailFilter" value="" id="email-filter">
+                    <input type="submit" name="" value="search">
+               </form>
+            <?php endif; ?>
+        </div>
+    </body>
+</html>
+
